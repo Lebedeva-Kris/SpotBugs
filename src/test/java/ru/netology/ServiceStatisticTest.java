@@ -14,4 +14,20 @@ class ServiceStatisticTest {
         long actual = service.findMax(incomesInBillions);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldCalculateSum(){
+        long expected = 76;
+
+        long actual = service.calculateSum(incomesInBillions);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldCalculateAverage(){
+        long expected = 6;
+        long actual = service.calculateAverage(incomesInBillions);
+
+        assertEquals(expected, actual);
+    }
 }

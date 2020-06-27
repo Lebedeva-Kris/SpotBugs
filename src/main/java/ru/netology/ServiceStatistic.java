@@ -10,4 +10,17 @@ public class ServiceStatistic {
                 currentMax = income;
             return currentMax;
     }
+    public long calculateSum(long[] incomes){
+        long sum = 0;
+        for (long income : incomes) {
+            sum += income;
+        }
+        return sum;
+    }
+
+    public long calculateAverage(long[] incomes){
+        long average = calculateSum(incomes) / incomes.length;
+
+        return average;
+    }
 }
