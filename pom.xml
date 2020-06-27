@@ -33,6 +33,11 @@
                     <failIfNoTests>false</failIfNoTests>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.0.4</version>
+            </plugin>
         </plugins>
     </build>
 
