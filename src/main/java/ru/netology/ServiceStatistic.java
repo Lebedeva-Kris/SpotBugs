@@ -1,3 +1,5 @@
+package ru.netology;
+
 public class ServiceStatistic {
 
     public long findMax(long[] incomes){
